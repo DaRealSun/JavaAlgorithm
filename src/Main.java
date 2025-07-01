@@ -6,16 +6,17 @@ public class Main {
 
     }
 
-    static int maxNumber(int[] input) {
-        int maxNum =0;
-        int temp;
-        for(int i = 0; i < input.length-1; i++){
-            if(input[i]>input[i+1] ){
-                maxNum = input[i];
-            }
+    static void maxNumber(int[] input) {
+        int maxNum=0;
+
+        for(int i = 0; i < input.length; i++){
+            maxNum=input[0];
+                if(maxNum<input[i]){
+                    maxNum=input[i];
+                }
+
         }
         System.out.println(maxNum);
-        return maxNum;
 
     }
 
