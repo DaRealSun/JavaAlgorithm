@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] input = new int[] {1,2,-3,6,4,5};
+        int[] input = new int[] {1,2,-3,5,4,6};
         maxNumber(input);
 
     }
 
     static void maxNumber(int[] input) {
-        int maxNum=0;
+        int maxNum=input[0];
 
         for(int i = 0; i < input.length; i++){
-            maxNum=input[0];
                 if(maxNum<input[i]){
                     maxNum=input[i];
                 }
