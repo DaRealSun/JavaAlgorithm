@@ -1,17 +1,24 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        int[] input = new int[] {-5,-4,-3,-2,-1};
+        ArrayList<Integer> input = new ArrayList<Integer>();
+        input.add(5);
+        input.add(-5);
+        input.add(1);
+        input.add(0);
+        input.add(2);
+        input.add(3);
         maxNumber(input);
 
     }
 
-    static void maxNumber(int[] input) {
-        int maxNum=input[0];
+    static void maxNumber(ArrayList<Integer> input) {
+        int maxNum= input.getFirst();
+        for (Integer integer : input) {
 
-        for(int i = 0; i < input.length; i++){
-
-            maxNum=Math.max(maxNum,input[i]);
+            maxNum = Math.max(maxNum, integer);
 
         }
         System.out.println(maxNum);
